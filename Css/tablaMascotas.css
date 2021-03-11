@@ -1,0 +1,41 @@
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.03cm;
+    line-height: 1, 6;
+    background: url("https://i.pinimg.com/originals/c4/7c/fe/c47cfe0e2434240e3b6aa3e3586ed152.png");
+}
+
+div#menu {
+    background-color: blanchedalmond;
+}
+
+div#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+div#menu ul li {
+    display: inline-block;
+}
+
+div#menu ul li a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: orange;
+    display: block;
+    padding: 25px 20px;
+    text-decoration: none;
+}
+
+div#menu ul li a:hover {
+    background-color: aqua;
+}
+
+.item-r {
+    float: right;
+    margin: 0;
+    display: block;
+    background-color: blanchedalmond;
+}
