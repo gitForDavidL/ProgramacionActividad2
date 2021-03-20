@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="../Css/tablaMascotas.css">
     <title>Ciudadanos de 4 patas</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
 
 <body>
@@ -29,6 +30,47 @@
     <br>
 
     <script src="../Js/tablaMascotas.js"></script>
+
+
+    <div class="container">
+        <form action="" class="form">
+            <h1 class="title">Buscar: </h1>
+            <label for="buscar" class="label">Buscar mascota en los registros: </label>
+            <input type="text" name="buscar" class="campo" required>
+            <input type="button" class="submit" onclick="buscarId()" value="Buscar">
+        </form>
+    </div>
+
+    <br>
+    <div id="main-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Microchip</th>
+                    <th>Especie</th>
+                    <th>Sexo</th>
+                    <th>Tamaño</th>
+                    <th>Potencialmente peligroso</th>
+                    <th>Barrio</th>
+                </tr>
+            </thead>
+            <tbody id="res"></tbody>
+        </table>
+    </div>
+    <br>
+
+
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#" onclick="pagina1()">1</a></li>
+            <li class="page-item"><a class="page-link" href="#" onclick="pagina2()">2</a></li>
+            <li class="page-item"><a class="page-link" href="#" onclick="pagina3()">3</a></li>
+        </ul>
+
+
+        </div>
+
 </body>
 
 </html>
