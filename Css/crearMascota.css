@@ -1,95 +1,96 @@
-    html,
-    body {
-        width: 100%;
-        height: 100%;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        letter-spacing: 0.03cm;
-        line-height: 1, 6;
-        background: url("https://i.pinimg.com/originals/c4/7c/fe/c47cfe0e2434240e3b6aa3e3586ed152.png");
-    }
-    
-    div#menu {
-        background-color: blanchedalmond;
-    }
-    
-    div#menu ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-    
-    div#menu ul li {
-        display: inline-block;
-    }
-    
-    div#menu ul li a {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        color: orange;
-        display: block;
-        padding: 25px 20px;
-        text-decoration: none;
-    }
-    
-    div#menu ul li a:hover {
-        background-color: aqua;
-    }
-    
-    .item-r {
-        float: right;
-        margin: 0;
-        display: block;
-        background-color: blanchedalmond;
-    }
-    
-    .container .form .form-header .form-title {
-        font-weight: normal;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        color: white;
-        text-align: center;
-    }
-    
-    .container .form {
-        background: rgba(0, 0, 0, .1);
-        width: 90%;
-        max-width: 750px;
-        margin: auto;
-        padding: 5px 35px;
-        margin-top: 30px;
-        padding-bottom: 30px;
-        border-radius: 3px;
-    }
-    
-    .container .form .form-label {
-        display: block;
-        font-size: 16px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        position: relative;
-    }
-    
-    .container .form .form-input,
-    .form-selec,
-    .form-select .form-option {
-        background: rgba(0, 0, 0, .1);
-        border: none;
-        outline: none;
-        border-bottom: 2px solid;
-        width: 100%;
-        padding: 12px;
-        margin-bottom: 20px;
-        border-radius: 2px;
-        font-size: 14px;
-        color: black;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-    
-    .container .form .submit {
-        border-radius: 8px;
-        background-color: #555555;
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        font-size: 16px;
-        margin: auto;
-    }
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.03cm;
+    line-height: 1, 6;
+    background: url("https://i.pinimg.com/originals/c4/7c/fe/c47cfe0e2434240e3b6aa3e3586ed152.png");
+}
+
+div#menu {
+    background-color: blanchedalmond;
+}
+
+div#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+div#menu ul li {
+    display: inline-block;
+}
+
+div#menu ul li a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: orange;
+    display: block;
+    padding: 25px 20px;
+    text-decoration: none;
+}
+
+div#menu ul li a:hover {
+    background-color: aqua;
+}
+
+.item-r {
+    float: right;
+    margin: 0;
+    display: block;
+    background-color: blanchedalmond;
+}
+
+.container .form .form-header .form-title {
+    font-weight: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.container .form {
+    background: rgba(0, 0, 0, .2);
+    width: 90%;
+    max-width: 750px;
+    margin: auto;
+    padding: 5px 35px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 3px;
+}
+
+.container .form .form-label {
+    display: block;
+    font-size: 16px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+}
+
+.container .form .form-input,
+.form-selec,
+.form-select .form-option {
+    background: rgba(0, 0, 0, .1);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container .form .submit {
+    border-radius: 8px;
+    background-color: #555555;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: auto;
+}
