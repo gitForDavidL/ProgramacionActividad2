@@ -2,25 +2,88 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Css/actualizar.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <title>Ciudadanados de 4 patas</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
 
 <body>
-
     <div id="menu">
         <ul>
             <li><a href="index.html">INICIO</a></li>
             <li><a href="tablaMascotas.html">TABLA DE DATOS</a></li>
             <li><a href="crearMascota.html">CREAR MASCOTA</a></li>
-            <li><a href="actualizarMascota.html">MODIFICAR MASCOTA</a></li>
+            <li><a href="actualizarMascota.html">ACTUALIZAR MASCOTA</a></li>
             <img src="../images/Logo.png" alt="" width="70" height="70" class="item-r"></a>
         </ul>
     </div>
+    <div id="main-container">
+        <form id="buscar">
+            <h4>Busqueda por microchip </h4>
+            <label for="busquedaMicroship" class="form-label">Ingrese microchip: </label>
+            <input type="text" name="especie" id="busquedaMicroship" class="registroAnimal" placeholder="microchip" required>
+            <input type="button" value="Buscar" id="botons" onclick="leerCsv()">
+
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">Specie</th>
+                        <th scope="col">Microchip</th>
+                        <th scope="col">Sex</th>
+                        <th scope="col">Size</th>
+                        <th scope="col">Barrio</th>
+                        <th scope="col">Race</th>
+                        <th scope="col">Owner</th>
+                        <th scope="col">adress</th>
+                        <th scope="col">Picture</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="llenar">
+
+                    </tr>
+
+                </tbody>
+            </table>
+            </a>
+            <input type="button" value="reiniciar" disabled=true id="reinicia" onclick="reiniciar()">
+        </form>
+    </div>
+    <!-- style="display: none;" -->
+    <div id="formu" style="display: none;">
+        <form id="form" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="email">Race:</label>
+                <select id="select" class="form-select" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                     <!-- <option value="1">One</option>" -->
+                  </select>
+            </div>
+            <div class="form-group">
+                <label for="pwd">Owner:</label>
+                <input type="text" name="ow" id="owner" class="form-control" placeholder="Owner" required>
+            </div>
+            <div class="form-group">
+                <label for="pwd">address:</label>
+                <input type="text" name="ad" id="address" class="form-control" placeholder="Address" required>
+            </div>
+            <div class="form-group">
+                <label for="pwd">picture:</label>
+                <input type="file" name="pwd" class="form-control" id="pwd" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" onclick="actualizar()" value="Actualizar" class="btn-default"></button>
+            </div>
+
+        </form>
+    </div>
+    <script src="../Js/actualizarMascotas.js">
+    </script>
 </body>
 
 </html>

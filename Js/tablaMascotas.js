@@ -4,7 +4,7 @@ d3.dsv(";", "../Resources/pets-citizens.csv")
         let res = document.querySelector('#res')
         res.innerHTML = '';
         for (var i = 0; i < 50; i++) {
-            res.innerHTML += `
+            res.innerHTML += ` 
             <tr>
             <td>${data[i].microchip}</td>
             <td>${data[i].species}</td>
@@ -15,7 +15,6 @@ d3.dsv(";", "../Resources/pets-citizens.csv")
             </tr>
 `
         }
-
     })
     .catch(function(error) {
         // handle error   
