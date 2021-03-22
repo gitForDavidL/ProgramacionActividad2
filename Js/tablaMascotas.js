@@ -61,6 +61,7 @@ function cargarDatos(desde, fin) {
                 <td>${data[i].sex}</td>
                 <td>${data[i].size}</td>
                 <td>${data[i].potentDangerous}</td>
+                <td>${data[i].neighborhood}</td>
                 </tr>`
             }
         })
@@ -94,7 +95,7 @@ function hacerFiltro() {
             for (var j = 0; j < arreglo.length; j++) {
                 if (esMultiplo(j, 1000)) {
                     lista.innerHTML += `
-                        <li class="page-item"><a class="page-link" href="#" onclick="cargarFiltros(${first},${end},${arreglo})" id="${cont}">${cont}</a></li> */
+                        <li class="page-item"><a class="page-link" href="#" onclick="cargarFiltros(${first},${end},${arreglo})" id="${cont}">${cont}</a></li> 
                         `
                     cont++;
                     first += 1000;
@@ -114,7 +115,7 @@ function cargarFiltros(desde, fin, arreglo) {
     res.innerHTML = ''
     for (var k = desde; k < fin; k++) {
 
-        console.log(arreglo[k])
+
         res.innerHTML += `
         <tr>
         <td>${arreglo[k].microchip}</td>
@@ -122,6 +123,7 @@ function cargarFiltros(desde, fin, arreglo) {
         <td>${arreglo[k].sex}</td>
         <td>${arreglo[k].size}</td>
         <td>${arreglo[k].potentDangerous}</td>
+        <td>${arreglo[k].neighborhood}</td>
         </tr>`
     }
 }

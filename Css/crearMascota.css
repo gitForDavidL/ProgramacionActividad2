@@ -94,3 +94,45 @@ div#menu ul li a:hover {
     font-size: 16px;
     margin: auto;
 }
+
+#main-container {
+    width: 80%;
+    background-color;
+    justify-content: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50 px;
+}
+
+table {
+    text-align: center;
+    width: 100%;
+    border-radius: 8px;
+}
+
+th,
+td {
+    padding: 8px;
+}
+
+thead {
+    background-color: blanchedalmond;
+    border-bottom: solid 5px black;
+    color: black;
+    border-radius: 8px;
+}
+
+tbody {
+    background: rgba(0, 0, 0, .2);
+    color: white;
+    border-radius: 8px;
+}
+
+tr:nth-child(even) {
+    background: rgba(0, 0, 0, .3);
+}
+
+tr:hover td {
+    background-color: white;
+    color: black;
+}

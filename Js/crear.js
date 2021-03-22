@@ -1,23 +1,28 @@
-const arreglo = new Array();
-cargarDatos()
-console.log(arreglo[0][0])
+function cargarTabla() {
+    var microchip = document.getElementById('microchip').value
+    var especie = document.getElementById('especie').value
+    var sexo = document.getElementById('sexo').value
+    var size = document.getElementById('size').value
+    var peligro = document.getElementById('peligroso').value
+    var barrio = document.getElementById('barrio').value
 
-function cargarDatos() {
-    d3.dsv(";", "../Resources/pets-citizens.csv")
-        .then(function(data) {
-            for (var i = 0; i < data.length; i++) {
-                arreglo[i] = new Array()
-                arreglo[i][0] = data[i].microchip
-                arreglo[i][1] = data[i].neighborhood
-                arreglo[i][2] = data[i].potentDangerous
-                arreglo[i][3] = data[i].sex
-                arreglo[i][4] = data[i].size
-                arreglo[i][5] = data[i].species
-                arreglo[i][9] = data[i].picture
+    console.log(microchip)
 
-            }
-        })
-        .catch(function(error) {
-            // handle error   
-        });
+    let table = document.getElementById('res')
+    table.innerHTML += `
+                        <tr>
+                        <td>${microchip}</td>
+                        <td>${especie}</td>
+                        <td>${sexo}</td>
+                        <td>${size}</td>
+                        <td>${peligro}</td>
+                        <td>${barrio}</td>
+                        </tr>`
+
+    document.getElementById('microchip').value = ""
+    document.getElementById('especie').value = ""
+    document.getElementById('sexo').value = ""
+    document.getElementById('size').value = ""
+    document.getElementById('barrio').value = ""
+
 }

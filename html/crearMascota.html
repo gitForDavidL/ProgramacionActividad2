@@ -37,23 +37,44 @@
                 <input type="text" name="especie" id="especie" class="form-input" placeholder="Ingrese especie" required>
 
                 <label for="sexo" class="form-label">Ingrese sexo del animal: </label>
-                <input type="text" name="microchip" id="sexo" class="form-input" placeholder="Ingrese sexo" required>
+                <input type="text" name="sexo" id="sexo" class="form-input" placeholder="Ingrese sexo" required>
 
                 <label for="size" class="form-label">Ingrese tamaño del animal: </label>
                 <input type="text" name="size" id="size" class="form-input" placeholder="Ingrese tamaño" required>
 
-                <label for="peligroso" class="form-label">Seleccione si es potencial mente peligroso: <select name="peligroso" id="peligroso" class="form-selec">
-                    <option class="form-option">Es potencialmente peligroso.</option>
-                    <option class="form-option">No es potencialmente peligroso.</option>
-                </select></label>
+                <label for="peligroso" class="form-label">Seleccione si es potencial mente peligroso: 
+                    <select name="peligroso" id="peligroso" class="form-selec">
+                    <option class="form-option" value="Si">Es potencialmente peligroso.</option>
+                    <option class="form-option" value="No">No es potencialmente peligroso.</option>
+                </select>
+            </label>
 
 
 
                 <label for="barrio" class="form-label">Ingrese barrio del animal: </label>
                 <input type="text" name="barrio" id="barrio" class="form-input" placeholder="Ingrese barrio del animal" required>
 
-                <input type="submit" value="Enviar" class="submit">
+                <input type="button" value="Enviar" class="submit" onclick="cargarTabla()">
             </form>
+        </div>
+
+        <br>
+
+        <div id="main-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Microchip</th>
+                        <th>Especie</th>
+                        <th>Sexo</th>
+                        <th>Tamaño</th>
+                        <th>Potencialmente peligroso</th>
+                        <th>Barrio</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="res"></tbody>
+            </table>
         </div>
 
 
