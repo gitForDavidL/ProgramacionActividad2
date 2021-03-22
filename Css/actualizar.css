@@ -8,6 +8,52 @@ body {
     background: url("https://i.pinimg.com/originals/c4/7c/fe/c47cfe0e2434240e3b6aa3e3586ed152.png");
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.form {
+    background: violet;
+}
+
+.form-group {
+    padding: 55px;
+    height: 15px;
+    width: 450px;
+    margin: auto;
+}
+
+.btn-default {
+    margin: auto;
+}
+
+.from-label {
+    display: block;
+    font-size: 16px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+}
+
+.registroAnimal {
+    background: rgb(208, 162, 130);
+    width: 300px;
+    height: 10px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 4px;
+}
+
+div#container {
+    justify-content: center;
+}
+
+div#buscar {
+    justify-content: center;
+}
+
 div#menu {
     background-color: blanchedalmond;
 }
@@ -33,6 +79,16 @@ div#menu ul li a {
 div#menu ul li a:hover {
     background-color: aqua;
 }
+
+table {
+    background: rgba(0, 0, 0, .2);
+    border: 5px solid white;
+}
+
+
+/*tr :nth-child(even) {
+    background: rgba(0, 0, 0, .3);
+}*/
 
 .item-r {
     float: right;

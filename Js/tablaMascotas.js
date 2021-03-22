@@ -1,6 +1,21 @@
 d3.dsv(";", "../Resources/pets-citizens.csv")
     .then(function(data) {
 
+        let res = document.querySelector('#res')
+        res.innerHTML = '';
+        for (var i = 0; i < 50; i++) {
+            res.innerHTML += ` 
+            <tr>
+            <td>${data[i].microchip}</td>
+            <td>${data[i].species}</td>
+            <td>${data[i].sex}</td>
+            <td>${data[i].size}</td>
+            <td>${data[i].potentDangerous}</td>
+            <td>${data[i].neighborhood}</td>
+            </tr>
+`
+        }
+
         var cont = 1;
         var first = 0;
         var end = 1000;
