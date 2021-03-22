@@ -74,7 +74,7 @@ tbody {
 }
 
 tr:nth-child(even) {
-    background: rgba(0, 0, 0, .2);
+    background: rgba(0, 0, 0, .3);
 }
 
 tr:hover td {
@@ -107,7 +107,34 @@ tr:hover td {
 }
 
 .label {
-    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-left: 8cm;
     margin-bottom: 1cm;
+}
+
+.form-selec,
+.form-select .form-option {
+    background: rgba(0, 0, 0, .1);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid;
+    width: ;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.submit {
+    border-radius: 8px;
+    background-color: #555555;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: auto;
 }
